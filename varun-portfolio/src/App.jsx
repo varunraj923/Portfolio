@@ -1,10 +1,12 @@
-import React from 'react';
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Body from './Body';
 import MyStory from './MyStory';
 import SkillsContainer from './SkillsContainer';
 import ProjectContainer from './ProjectContainer';
 import Mainbox from './Mainbox';
+import Experience from './Experience';
+import Contact from './Contact';
 
 const App = () => {
   const approuter = createBrowserRouter([
@@ -28,6 +30,15 @@ const App = () => {
           path: "Projects", // Projects route
           element: <ProjectContainer />, // Renders ProjectContainer component
         },
+        {
+          path: "Experience", // Experience route
+          element: <Experience />, // Renders Experience component
+        },
+        {
+          path : "Contact",
+          element : <Contact/>
+        },
+       
       ],
     },
   ]);
